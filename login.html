@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<head>
+	<title>Gama</title>
+	<link rel="stylesheet" type="text/css" href="login.css">
+	<link rel="stylesheet" href="font-awesome.css">
+	<link rel="shortcut icon" href="ico.ico">
+</head>
+<body>
+  <div id="coloumb-login">
+    <form action="index.html">
+        <div class="imgcontainer">
+          <img src="avatar.png" alt="Avatar" class="avatar">
+        </div>
+          <div id="kolom">
+          <label><b> E-mail atau Username</b></label>
+          <input type="text" placeholder="Masukkan e-mail atau username" name="email">
+      
+          <label><b> Kata sandi</b></label>
+          <input type="password" placeholder="Masukkan kata sandi" name="katasandi">
+      
+          <button type="submit">Masuk</button>
+          <input type="checkbox" checked="checked"><span> Ingatkan Saya</span>
+          </div>
+        <div class="container" style="background-color:#f1f1f1">
+          <button type="button" class="cancelbtn">Cancel</button>
+          <a href="#" id="forgot-password"><span class="psw">Lupa Passwordmu?</span></a>
+        </div>
+      </form>
+  </div>
+  <div id="footer">
+  </div>
+  <script type="text/javascript">
+    
+          // Javascript buat slide 
+            var slides = document.querySelectorAll('#slides .slide');
+            var currentSlide = 0;
+            var slideInterval = setInterval(nextSlide,2000); // Waktu perpindahan gambar //
+        
+            function nextSlide(){
+              slides[currentSlide].className = 'slide';
+              currentSlide = (currentSlide+1)%slides.length;
+              slides[currentSlide].className = 'slide showing';
+            }
+        </script>
+</body>
+</html>
